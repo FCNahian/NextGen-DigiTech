@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="871.654" height="897.389" style=""><rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="none" stroke="none"/>
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#33c8c1"/>
+      <stop offset="1" stop-color="#119bd2"/>
+    </linearGradient>
+  </defs>
+  
+<g class="currentLayer" style=""><title>Layer 1</title><g id="Group_109" data-name="Group 109" class="selected" opacity="0.5">
+    <path id="Path_187" data-name="Path 187" d="M870.6709824218749,-0.000060546874919964466 S775.856982421875,231.5379394531251 445.656982421875,157.43793945312518 s-471.11,172.11 -441.91,381.669 s109.33,282.112 352.12,174.071 s414.688,-54.082 514.8,184.208 C872.8809824218749,899.0759394531251 870.6709824218749,-0.000060546874919964466 870.6709824218749,-0.000060546874919964466 z" opacity="0.5" fill="url(#linear-gradient)"/>
+    <path id="Path_197" data-name="Path 197" d="M870.6709824218749,-0.000060546874919964466 S775.856982421875,231.5379394531251 445.656982421875,157.43793945312518 s-471.11,172.11 -441.91,381.669 s109.33,282.112 352.12,174.071 s414.688,-54.082 514.8,184.208 C872.8809824218749,899.0759394531251 870.6709824218749,-0.000060546874919964466 870.6709824218749,-0.000060546874919964466 z" opacity="0.5" fill="url(#linear-gradient)"/>
+  </g></g></svg>
